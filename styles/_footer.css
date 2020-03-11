@@ -35,15 +35,14 @@ footer {
 @media (min-width: 900px) {
 
     footer {
-        position: relative;
+        position: absolute;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: 95px;
+        height: 102px;
+        width: 100%;
         background-color: #FFFFFF;
-        margin-left: 6%;
-        margin-right: 7%;
     }
 
     .social-container {
@@ -56,6 +55,7 @@ footer {
         height: 0;
         margin-top: 0;
         z-index: 1;
+        margin-right: 7%;
     }
 
     .copyright {
@@ -67,5 +67,6 @@ footer {
         font-size: 14px;
         line-height: 0;
         letter-spacing: 0;
+        margin-left: 6%;
     }
 }
