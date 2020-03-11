@@ -23,4 +23,6 @@ a:hover{
     color: #00F3BB;
     letter-spacing: 0;
     line-height: 28px;
+    text-decoration: line-through;
+
 }
