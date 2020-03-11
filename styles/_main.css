@@ -1,0 +1,19 @@
+:root {
+    --font-mono: 'IBM Plex Mono';
+    --font-sans: 'IBM Plex Sans';
+    --font-serif: 'IBM Plex Serif';
+    --font-Condensed: 'IBM Plex Sans Condensed';
+    --text-color: #060A24;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: var(--text-color);
+    text-decoration: none;
+}
+button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}

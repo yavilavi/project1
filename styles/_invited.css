@@ -1,0 +1,36 @@
+.invited-title {
+    position: relative;
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    margin-left: 13.9%;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.invited-images {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+}
+
+.invited-image {
+    width: 100%;
+}
+
+@media (min-width:900px){
+    .invited-images{
+        position: relative;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .invited-title{
+        font-size: 48px;
+        line-height: 62px;
+        margin-bottom: 2%;
+    }
+
+}

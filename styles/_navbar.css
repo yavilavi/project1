@@ -1,0 +1,180 @@
+.menu-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    opacity: 100%;
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 0;
+    margin-right: 19px;
+    top: 16px;
+    bottom: 16px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+/*ocultar el menú en primera instancia*/
+
+input+label+label+div {
+    display: none;
+}
+
+
+/*mostrar barras*/
+
+input+label {
+    display: block;
+}
+
+
+/*------*/
+
+
+/*Ocultar x primero*/
+
+input+label+label {
+    display: none;
+}
+
+
+/*------*/
+
+
+/*ocultar barras*/
+
+input:checked+label {
+    content: '';
+    display: none;
+}
+
+
+/*------*/
+
+
+/*mostrar x*/
+
+input:checked+label+label {
+    content: '';
+    display: block;
+}
+
+
+/*------*/
+
+input:checked+label+label+div {
+    display: block;
+    position: relative;
+    margin-top: 270px;
+    width: 100%;
+    height: 224px;
+    background: #0000EC;
+    z-index: 5;
+}
+
+.menu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.menu ul li a {
+    text-transform: uppercase;
+    position: relative;
+    font-family: var(--font-mono);
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 28px;
+    font-weight: 100;
+    width: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+@media (min-width:900px) {
+    .menu-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+        opacity: 100%;
+    }
+    .icon {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin-left: 100px;
+        margin-top: 22px;
+    }
+    .menu {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: end;
+        margin-right: 100px;
+        margin-top: -40px;
+        height: 80px;
+        width: 35%;
+    }
+    .menu ul {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        width: 100%;
+    }
+    .menu ul li {
+        position: relative;
+        display: block;
+        color: #060A24;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0;
+        margin-left: 48px;
+    }
+    .menu ul li a {
+        text-transform: uppercase;
+        position: relative;
+        font-family: var(--font-mono);
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 28px;
+        font-weight: 100;
+        width: 300px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
